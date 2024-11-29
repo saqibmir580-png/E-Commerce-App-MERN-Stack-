@@ -36,7 +36,7 @@ app.use("/api/v2", order);
 
 app.use("/api/v2", payment);
 
-app.use(express.static(path.join(_dirname, "/frontend/dist")));
+app.use(express.static(path.join(_dirname, "/frontend/build")));
 
 
 app.get("*", (req, res) => {
